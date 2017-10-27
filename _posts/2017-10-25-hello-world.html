@@ -5,4 +5,5 @@ title: 铁头娃的第一篇文章
 <h2>{{ page.title }}</h2>
   <p>我的第一篇文章</p>
    <p style="color: #FF0000">铁头娃很懒，啥都没有留下</p>
-<p>{{ page.date | date_to_string }}</p>
+<p>{{ page.date | date: "%Y-%m-%d" }}</p>
+

@@ -7,7 +7,7 @@ title: 铁头娃的博客
 <p>最新文章</p>
 
 {% for post in paginator.posts %}
- <li>{{ post.date | date_to_string }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+ <li>{{ post.date |  date: "%Y-%m-%d" }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
