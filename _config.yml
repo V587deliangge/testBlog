@@ -1,7 +1,7 @@
 baseurl: /testBlog
 
 gems: [jekyll-paginate]
-paginate: 1
+paginate: 2
 paginate_path: "blog/page:num"
 
 language: zh-CN  
